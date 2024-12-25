@@ -1,0 +1,234 @@
+:root{
+  --primary:#ff3838;
+  --sec: #ffcccc;
+  --futterArea: #dff9fb;
+  --pragrafColor: #aaa69d;
+  --drakColor: #1e272e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+/* Body Background */
+body {
+  background: #fff;
+}
+/* Navigation Bar */
+header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 5px;
+  top: 0;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+.logo {
+  font-size: 40px;
+  font-weight: bold;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+.nav-links li {
+ margin: 15px;
+}
+.nav-links li a {
+ text-decoration: none;
+ color: var(--drakColor);
+ font-weight: bold;
+}
+.nav-links li a:hover {
+ color: var(--primary);
+}
+.btn-1 {
+  background: var(--primary);
+  color: #fff;
+  padding: 10px;
+  border: 1px solid var(--primary);
+  border-radius: 8px;
+  font-size: 14px;
+}
+.btn-1:hover{
+  cursor: pointer;
+  background: var(--primary);
+  color: var(--drakColor);
+  border: var(--primary);
+}
+/* Hero Section Style */
+.Hero img {
+  width: 30%;
+  height: 20%;
+}
+.contents {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 11%;
+}
+.child_content h1 {
+  font-size: 50px;
+  margin-left: 10%;
+}
+.child_content p {
+  color: #7b7878;
+  margin-left: 10%;
+  margin-top: 3%;
+}
+.child_content pre {
+  color: var(--primary);
+}
+.btn-2 {
+  background: var(--primary);
+  color: #fff;
+  margin-left: 10%;
+  margin-top: 3%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid var(--primary);
+  border-radius: 8px;
+  font-size: 14px;
+}
+.btn-2:hover{
+  cursor: pointer;
+  background: var(--primary);
+  color: var(--drakColor);
+  border: var(--primary);
+}
+p::selection{
+  background: var(--primary);
+  color: #fff;
+}
+a::selection{
+  background: var(--primary);
+  color: #fff;
+}
+h1::selection{
+  background: var(--primary);
+  color: #fff;
+}
+.child_content pre::selection {
+  background: var(--primary);
+  color: #fff;
+}
+
+/* Section Styling */
+.recipe-section {
+  text-align: center;
+  background: var(--sec);
+}
+
+.recipe-section h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  padding-top: 40px;
+}
+
+.recipe-section p {
+  font-size: 1rem;
+  color: var(--pragrafColor);
+  margin-bottom: 20px;
+}
+
+/* Recipe Container */
+.recipe-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Recipe Card */
+.recipe-card {
+  background: #fff;
+  border: 1px solid var(--pragrafColor);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: calc(25% - 20px);
+  max-width: 300px;
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 15px;
+  transition: transform 0.3s ease;
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+}
+
+.recipe-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.recipe-card img {
+  width: 100%;
+  height: 45%;
+}
+
+.recipe-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.recipe-card p {
+  font-size: 0.9rem;
+  color: var(--pragrafColor);
+  margin-bottom: 15px;
+}
+
+.recipe-card button {
+  padding: 10px 30%;
+  background: #fff;
+  color: var(--drakColor);
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: transform 0.3s ease;
+}
+
+.recipe-card button:hover {
+  background: var(--primary);
+  color: #fff;
+  border: 2px solid var(--primary);
+  transform: translateY(-5px);
+}
+/* Footer Area Style */
+#footer_area {
+ background: var(--futterArea);
+ padding: 25px 0;
+}
+#footer_area ul{
+  text-align: center;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+#footer_area ul li{
+  display: inline-block;
+  margin: 0 5px;
+}
+#footer_area ul li a{
+  text-decoration: none;
+  color: var(--pragrafColor);
+  font-size: 14px;
+}
+#footer_area ul li a:hover{
+  color: var(--primary);
+  text-decoration: underline;
+  
+}
+#footer_area p {
+  color: var(--pragrafColor);
+  font-size: 11px;
+  text-align: center;
+}
