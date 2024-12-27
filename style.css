@@ -40,6 +40,8 @@ header {
 }
 .nav-links li {
  margin: 15px;
+ position: relative;
+ top: 9px;
 }
 .nav-links li a {
  text-decoration: none;
@@ -96,28 +98,23 @@ header {
   border-radius: 8px;
   font-size: 14px;
 }
-.btn-2:hover{
+.btn-2:hover {
   cursor: pointer;
   background: var(--primary);
   color: var(--drakColor);
   border: var(--primary);
 }
-p::selection{
-  background: var(--primary);
-  color: #fff;
-}
-a::selection{
-  background: var(--primary);
-  color: #fff;
-}
-h1::selection{
-  background: var(--primary);
-  color: #fff;
-}
+h1::selection,
+h3::selection,
+a::selection,
+p::selection,
+button::selection,
+.logo::selection,
 .child_content pre::selection {
   background: var(--primary);
   color: #fff;
 }
+
 
 /* Section Styling */
 .recipe-section {
@@ -231,4 +228,46 @@ h1::selection{
   color: var(--pragrafColor);
   font-size: 11px;
   text-align: center;
+}
+
+@media only screen and (max-width:600px) {
+   .logo {
+  font-size: 30px;
+ }
+ .nav-links li {
+ margin: 5px;
+ }
+ .nav-links {
+  flex-direction: column;
+  background: #fff;
+  position: absolute;
+  top: 45px;
+  right: 0;
+  width: 100%;
+  padding: 30px;
+ }
+ .contents img {
+  display: none;
+ }
+ .contents {
+    text-align: center;
+    padding-top: 30px;
+ }
+ /* Recipe Container */
+.recipe-container {
+  display: block;
+ }
+.recipe-card {
+  margin: auto auto;
+  margin-bottom: 10px;
+  width: 100%;
+ }
+.recipe-card:nth-child(4) {
+  margin-bottom: 0px;
+ }
+ .recipe-card img {
+  width: 100%;
+  height: 250px;
+ }
+ 
 }
